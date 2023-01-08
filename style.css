@@ -1,0 +1,129 @@
+/* RESET STYLES */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* GENERAL STYLES */
+
+body {
+    font-family: "Manrope", sans-serif;
+    color: #cee3e9;
+    font-size: 16px;
+    font-weight: 400;
+
+    background-color: hsl(218, 23%, 16%);
+    padding: 0 16px;
+}
+
+/* CARD STYLES */
+
+.card {
+    max-width: 540px;
+    margin: 120px auto 200px auto;
+    background-color: #313a48;
+    border-radius: 10px;
+    padding: 40px 24px 0 24px;
+    box-shadow: 30px 50px 80px rgba(0, 0, 0, 0.1002);
+    text-align: center;
+    min-height: 0;
+    transition: min-height 0.2s;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/*  */
+
+.advice-label {
+    margin-bottom: 24px;
+
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 3.45714px;
+    color: #53ffaa;
+}
+
+.advice {
+    margin-bottom: 24px;
+
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: -0.257143px;
+    color: #cee3e9;
+}
+
+/*  */
+
+.img {
+    display: block;
+    margin: 0 auto;
+}
+
+/*  */
+
+.btn {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: none;
+    margin: 0 auto;
+    background-color: #53ffaa;
+    position: relative;
+    top: 32px;
+
+    transition: box-shadow 0.2s, transform 0.2s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: 0 0 40px #53ffaa;
+}
+
+.btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 20px #53ffaa;
+}
+
+/* MEDIA QUERIES */
+
+/* 640/16=40 */
+@media only screen and (min-width: 40em) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .card {
+        padding: 48px 48px 0 48px;
+        margin: 0;
+    }
+
+    .advice-label {
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: 4.08571px;
+    }
+
+    .advice {
+        font-size: 28px;
+        line-height: 38px;
+        letter-spacing: -0.3px;
+        margin-bottom: 40px;
+    }
+}
+
+/*  */
